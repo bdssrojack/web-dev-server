@@ -7,9 +7,9 @@ import helloController from "./controllers/hello-controller.js";
 import userController from "./controllers/user-controller.js";
 import tuitsConstroller from "./controllers/tuits-constroller.js";
 import mongoose from "mongoose";
-// const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://localhost:27017/webdev';
-// mongoose.connect(CONNECTION_STRING);
-mongoose.connect("mongodb+srv://bdssrojack:lzs19980118@cluster0.axah5bk.mongodb.net/?retryWrites=true&w=majority");
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://localhost:27017/webdev';
+mongoose.connect(CONNECTION_STRING);
+// mongoose.connect("mongodb+srv://bdssrojack:lzs19980118@cluster0.axah5bk.mongodb.net/?retryWrites=true&w=majority");
 // mongoose.connect("mongodb://localhost:27017/webdev");
 
 const app = express(); //This call creates an instance of the express library and assigns it to local variable app
